@@ -1,0 +1,17 @@
+.categories-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7vw;
+}
+
+.categories-images{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.categories-container img{
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+}

@@ -1,0 +1,21 @@
+.about-us-container{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.about-us-container p{
+    width: 100%;
+}
+
+.about-us-container img{
+    height: 300px;
+    width: 350px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.about-us-images{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}

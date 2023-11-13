@@ -1,0 +1,31 @@
+.wrapper{
+    height: 40px;
+    display: flex;
+    background: orange;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.info_container,
+.sm-container{
+    display: flex;
+    justify-content: end;
+
+}
+.sm-container li,
+.info_container li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.info_container i{
+    margin-right: 5px;
+
+}
+@media only screen and (max-width: 600px){
+    .wrapper{
+        display: none;
+    }
+}
