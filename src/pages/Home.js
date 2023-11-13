@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import HomeCarousel from "../components/HomeCarousel";
 import GetInTouchBar from "../components/GetInTouchBar";
 import Partners from "../components/Partners";
@@ -8,6 +8,11 @@ function Home() {
     const containerStyle = {
         overflow: "hidden",
     }
+
+    useEffect(() => {
+        document.title = 'IT-SYSTEM - Accueil';
+    }, []);
+
     return (
         <>
             <HomeCarousel/>
