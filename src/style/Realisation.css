@@ -25,9 +25,14 @@
 
 }
 
-
 @media only screen and (max-width: 800px){
     .flex-container div{
-        margin: 20px;
+        margin: 35px auto 0;
+        width: 100%;
     }
+    .flex-container div img{
+        width: 110%;
+        height: 100%;
+    }
+
 }
