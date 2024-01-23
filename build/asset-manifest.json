@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d54231f.css",
-    "main.js": "/static/js/main.2005dfe8.js",
-    "index.html": "/index.html",
-    "main.5d54231f.css.map": "/static/css/main.5d54231f.css.map",
-    "main.2005dfe8.js.map": "/static/js/main.2005dfe8.js.map"
+    "main.css": "/safety_vision/static/css/main.6ed7625e.css",
+    "main.js": "/safety_vision/static/js/main.5ae238d2.js",
+    "static/media/glasses_bg.png": "/safety_vision/static/media/glasses_bg.7daa2b827ffad9a3849a.png",
+    "index.html": "/safety_vision/index.html",
+    "main.6ed7625e.css.map": "/safety_vision/static/css/main.6ed7625e.css.map",
+    "main.5ae238d2.js.map": "/safety_vision/static/js/main.5ae238d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d54231f.css",
-    "static/js/main.2005dfe8.js"
+    "static/css/main.6ed7625e.css",
+    "static/js/main.5ae238d2.js"
   ]
 }
