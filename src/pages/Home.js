@@ -4,6 +4,7 @@ import GetInTouchBar from "../components/GetInTouchBar";
 import Partners from "../components/Partners";
 import Realisation from "../components/Realisation";
 import {FloatingWhatsApp} from "react-floating-whatsapp";
+import Reviews from "../components/Reviews";
 
 function Home() {
     const containerStyle = {
@@ -21,7 +22,11 @@ function Home() {
             <div style={containerStyle} className="ms-5 mt-3 me-5">
                 <Realisation/>
                 <div className={"mb-5 mt-3"}>
-                    <Partners/></div>
+                    <Reviews/>
+                </div>
+                <div className={"mb-5 mt-3"}>
+                    <Partners/>
+                </div>
             </div>
             <FloatingWhatsApp phoneNumber={"212672821362"} accountName={"Safety Vision"}
                               avatar={"./images/logo_safety.jpg"}
