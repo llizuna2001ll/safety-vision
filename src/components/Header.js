@@ -3,14 +3,10 @@ import "../style/Header.css";
 function Header() {
     return(
           <div className="wrapper">
-          <div className="sm-container">
-              <li><i className="lni lni-facebook-oval"></i></li>
-              <li><i className="lni lni-instagram-original"></i></li>
-              <li><i className="lni lni-twitter-original"></i></li>
-          </div>
           <div className="info_container">
-              <li><i className="lni lni-phone"></i>+212 61802337</li>
-              <li><i><strong>@</strong></i>itsys.k@gmail.com</li>
+              <li><i className="lni lni-map-marker"></i><strong>47 Av Med Balafrej Lot Ennassr Sidi Moumen, Casablance</strong></li>
+              <li><i className="lni lni-phone"></i><strong>05 22 02 35 05</strong></li>
+              <li><i>@</i><strong>safety.vision.k@gmail.com</strong></li>
           </div>
           </div>
     );

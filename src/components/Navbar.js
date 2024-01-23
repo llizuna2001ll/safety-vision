@@ -8,8 +8,14 @@ function Navbarr() {
 
     window.addEventListener("scroll", function () {
         const navbar = document.getElementById("mynav");
-        if (window.pageYOffset > 40) navbar.classList.add("sticky");
-        else navbar.classList.remove("sticky");
+        const navbarLogo = document.getElementById("safety_logo")
+        if (window.pageYOffset > 25) {
+            navbar.classList.add("sticky");
+            navbarLogo.style.display = "none";
+        } else {
+            navbar.classList.remove("sticky");
+            navbarLogo.style.display = "block";
+        }
     });
 
 
@@ -18,11 +24,12 @@ function Navbarr() {
             <Header/>
             <Navbar id="mynav" className="navbar-style">
                 <div className="nav_container">
-                    <Navbar.Brand className="logo">IT-SYSTEM</Navbar.Brand>
+                    <Navbar.Brand id={"safety_logo"} className="logo"><img src={"./images/logos/safety_logo.png"}
+                                                        alt={"safety_vision"} width={150}/></Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link><Link className="navigation-item" to="/">ACCUEIL</Link></Nav.Link>
-                        <Nav.Link><Link className="navigation-item" to="/societe">SOCIÉTÉ</Link></Nav.Link>
-                        <Nav.Link><Link className="navigation-item" to="/services">SERVICES</Link></Nav.Link>
+                        <Nav.Link href={"#services"}><p  className="navigation-item">SERVICES</p></Nav.Link>
+                            <Nav.Link><Link className="navigation-item" to="/societe">À PROPS DE NOUS</Link></Nav.Link>
                     </Nav>
                 </div>
             </Navbar>

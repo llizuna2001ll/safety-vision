@@ -1,17 +1,17 @@
 .wrapper{
     height: 40px;
     display: flex;
-    background: orange;
+    background: #8E6CD6;
     justify-content: space-between;
-    padding-left: 20px;
     padding-right: 20px;
     align-items: center;
+    padding-left: 23%;
 }
 
 .info_container,
 .sm-container{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 
 }
 .sm-container li,

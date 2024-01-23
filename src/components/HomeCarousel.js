@@ -1,65 +1,61 @@
 import Carousel from 'react-bootstrap/Carousel';
-import $ from 'jquery';
 import '../style/HomeCarousel.css';
-import LearnMore from "./LearnMore";
+
 function HomeCarousel() {
 
     return (
         <>
-        <Carousel>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 slider-img"
-                    src="./images/slider1.jpg"
-                    alt="First slide"
-                />
-                <div className="learn-more-container">
-                    <LearnMore destination="/societe"/>
-                </div>
-                <Carousel.Caption className="caption-wrapper silder1">
-                        <h3>Slide de concassage</h3>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 slider-img"
+                        src="./images/slider1.jpg"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption className="caption-wrapper silder1">
+                        <h3>Style Personnalisé, Vue Optimale</h3>
                         <p>
-                            Paragraphe qui representent le concassage dans IT-SYSTEM
+                            Chez Safety Vision, nous croyons que votre vision mérite un style personnalisé. Découvrez
+                            notre sélection de montures esthétiques et de lentilles médicales pour une vue optimale qui
+                            reflète votre mode de vie
                         </p>
 
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 slider-img "
-                    src="./images/slide2.jpg"
-                    alt="Second slide"
-                />
-                <div className="learn-more-container">
-                    <LearnMore/>
-                </div>
-                <Carousel.Caption className="caption-wrapper slider2">
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 slider-img "
+                        src="./images/slider2.jpeg"
+                        alt="Second slide"
+                        style={{objectFit: "cover"}}
+                    />
+                    <Carousel.Caption className="caption-wrapper slider2">
 
-                        <h3>Slide d'electrecite</h3>
+                        <h3>Clarté et Élégance au Quotidien</h3>
                         <p>
-                            Paragraphe qui representent l'electrecite dans IT-SYSTEM
+                            Découvrez chez Safety Vision une vision claire et élégante au quotidien avec nos lunettes
+                            médicales et solaires polarisées. Optez pour le style sans compromis sur la qualité
                         </p>
 
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 slider-img "
-                    src="https://picsum.photos/id/238/800/320"
-                    alt="Third slide"
-                />
-                <div className="learn-more-container">
-                    <LearnMore/>
-                </div>
-                <Carousel.Caption className="caption-wrapper slider3">
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 slider-img "
+                        src="./images/slider2.jpg"
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption className="caption-wrapper slider3">
 
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+                        <h3>Conseils Personnalisés, Votre Vision, Notre Priorité</h3>
+                        <p>
+                            Chez Safety Vision, nos experts en optique vous offrent des conseils personnalisés pour
+                            trouver les lunettes parfaites adaptées à votre style de vie. Faites confiance à notre
+                            engagement envers votre vision, où qualité et style se rencontrent harmonieusement
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </>
     );
 }
