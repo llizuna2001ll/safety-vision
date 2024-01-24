@@ -17,7 +17,7 @@ function Footer() {
                         </div>
 
                         <div className="col-sm-3 col-md-3 item text">
-                            <h3>Partenaires</h3>
+                            <h3>Marques</h3>
                             <ul>
                                 <li>GIORGIO ARMANI</li>
                                 <li>BBGR</li>
