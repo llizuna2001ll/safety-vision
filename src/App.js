@@ -24,7 +24,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home/>}/>
                             <Route path="/societe" element={<Societe/>}></Route>
-                            <Route path="/face" element={<FaceShapeDetector/>}></Route>
+                            <Route path="/forme_visage" element={<FaceShapeDetector/>}></Route>
                             <Route  path={"*"} element={<NotFound/>}></Route>
                         </Routes>
                     </SmoothScroll>
