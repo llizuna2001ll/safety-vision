@@ -16,7 +16,7 @@ function FaceShapeDetector() {
             await faceapi.nets.tinyYolov2.loadFromUri('./models');
             console.log('Models loaded successfully');
         }
-
+        initializeWebcam();
         loadModels();
     }, []);
 
@@ -81,11 +81,6 @@ function FaceShapeDetector() {
     };
 
 
-    const handleModalShow = (e) => {
-        e.stopPropagation();
-        initializeWebcam();
-    };
-
     const handleModalClose = () => {
         // Stop capturing video stream when the modal is closed
         const video = webcamRef.current.video;
@@ -103,7 +98,7 @@ function FaceShapeDetector() {
             <div className="d-flex justify-content-center mb-5">
                 <div className="d-flex flex-column">
                     <button type="button" className="btn btn-success mb-5 fw-bold" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" onClick={handleModalShow}>
+                            data-bs-target="#exampleModal">
                         Curieux de connaître la forme de votre visage? Cliquer ici
                     </button>
                     <img style={{width:"50%", marginLeft:"25%", backgroundColor:"white"}} src={"./images/face_shapes.png"} alt={"formes_visage"}/>
@@ -111,7 +106,7 @@ function FaceShapeDetector() {
             </div>
 
             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true" style={{zIndex: "10000000"}} onClick={handleModalShow} onHide={handleModalClose}>
+                 aria-hidden="true" style={{zIndex: "10000000"}} onHide={handleModalClose}>
                 {/* Add event listeners to initialize and close the webcam when modal is shown or hidden */}
                 <div className="modal-dialog">
                     <div className="modal-content">
