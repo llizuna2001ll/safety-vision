@@ -81,10 +81,9 @@ function FaceShapeDetector() {
     };
 
 
-    const handleModalShow = () => {
+    const handleModalShow = (e) => {
+        e.stopPropagation();
         initializeWebcam();
-        setFaceShape("");
-        setFaceNotDetected("");
     };
 
     const handleModalClose = () => {
