@@ -9,6 +9,8 @@ import Navbarr from "./components/Navbar";
 import Societe from "./pages/Societe";
 import Footer from "./components/Footer";
 import SmoothScroll from "./components/SmoothScroll";
+import FaceShapeDetector from "./pages/FaceShapeDetector";
+import NotFound from "./pages/NotFound";
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home/>}/>
                             <Route path="/societe" element={<Societe/>}></Route>
+                            <Route path="/face" element={<FaceShapeDetector/>}></Route>
+                            <Route  path={"*"} element={<NotFound/>}></Route>
                         </Routes>
                     </SmoothScroll>
                 </div>

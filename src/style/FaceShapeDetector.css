@@ -1,0 +1,26 @@
+.scanning-line {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: #612E46; /* Change the color as needed */
+    animation: scanningAnimation 4s linear infinite;
+    left: 15%;
+}
+
+@keyframes scanningAnimation {
+    0% {
+        top: 10%;
+    }
+    25% {
+        top: 50%;
+    }
+    50% {
+        top: 90%;
+    }
+    75% {
+        top: 50%;
+    }
+    100% {
+        top: 10%;
+    }
+}
