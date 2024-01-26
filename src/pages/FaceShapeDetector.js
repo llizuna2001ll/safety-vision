@@ -3,11 +3,13 @@ import Webcam from 'react-webcam';
 import * as faceapi from 'face-api.js';
 import 'face-api.js';
 import '../style/FaceShapeDetector.css'
+import Spinner from "../components/Spinner";
 
 function FaceShapeDetector() {
     const webcamRef = useRef(null);
     const [faceShape, setFaceShape] = useState('');
     const [faceNotDetected, setFaceNotDetected] = useState('');
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         async function loadModels() {
@@ -34,6 +36,7 @@ function FaceShapeDetector() {
     };
 
     const detectFaces = async () => {
+        setLoading(true);
         const video = webcamRef.current.video;
 
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks();
@@ -78,6 +81,7 @@ function FaceShapeDetector() {
         } else {
             setFaceNotDetected(<span className={"text-danger"}>Aucun visage n'est detecté. Veuillez réessayer !</span>);
         }
+        setLoading(false);
     };
 
 
@@ -124,7 +128,7 @@ function FaceShapeDetector() {
                                 screenshotFormat="image/jpeg"
                                 style={{width: "100%", height: "100%", borderRadius: "5%", border: "black solid 2px"}}
                             />
-                            <div className="scanning-line"></div>
+                            {loading ? <Spinner /> : <div className="scanning-line"></div>}
                         </div>
                         <p className={"text-center"}>{faceNotDetected}</p>
                         <div className="modal-footer">

@@ -7,6 +7,36 @@
     left: 15%;
 }
 
+.spinner-img{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    animation: growingAnimation 3s linear infinite;
+}
+
+
+@keyframes growingAnimation {
+    0% {
+        transform: scale(30%);
+    }
+    25% {
+        transform: scale(50%);
+    }
+
+    50% {
+        transform: scale(70%);
+    }
+    75% {
+        transform: scale(50%);
+    }
+
+    100% {
+        transform: scale(30%);
+    }
+}
+
 @keyframes scanningAnimation {
     0% {
         top: 10%;
