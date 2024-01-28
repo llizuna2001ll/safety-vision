@@ -12,6 +12,10 @@ function FaceShapeDetector() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        document.title = 'Safety Vision - Découvrez votre style faciale';
+    }, []);
+
+    useEffect(() => {
         async function loadModels() {
             await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
             await faceapi.nets.faceLandmark68Net.loadFromUri('./models');
