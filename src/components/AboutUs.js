@@ -18,7 +18,7 @@ function AboutUs() {
                         supérieure et bénéficiez de notre expertise pour choisir des lunettes adaptées à votre style de
                         vie.</p>
                 </div>
-                <div className={"d-flex justify-content-between w-75 flex-wrap gap-5"}>
+                <div className={"d-flex justify-content-between w-75 flex-wrap gap-5 contact-loc mb-5"}>
                     <ContactUs/>
                     <Location/>
                 </div>

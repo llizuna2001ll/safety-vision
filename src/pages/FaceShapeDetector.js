@@ -101,7 +101,7 @@ function FaceShapeDetector() {
         <>
             <div className="d-flex justify-content-center mb-5">
                 <div className="d-flex flex-column">
-                    <button type="button" className="btn btn-success mb-5 fw-bold" data-bs-toggle="modal"
+                    <button type="button" className="btn btn-success m-5 fw-bold" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                         Curieux de connaître la forme de votre visage? Cliquer ici
                     </button>

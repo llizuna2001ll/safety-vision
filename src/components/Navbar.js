@@ -28,7 +28,7 @@ function Navbarr() {
                                                         alt={"safety_vision"} width={150}/></Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link><Link className="navigation-item" to="/">ACCUEIL</Link></Nav.Link>
-                        <Nav.Link><Link to={"/forme_visage"} className="navigation-item">DÉCOUVREZ VOTRE STYLE FACIAL</Link></Nav.Link>
+                        <Nav.Link><Link to={"/forme_visage"} className="navigation-item">STYLE FACIAL</Link></Nav.Link>
                         <Nav.Link><Link className="navigation-item" to="/societe">À PROPS DE NOUS</Link></Nav.Link>
                     </Nav>
                 </div>
